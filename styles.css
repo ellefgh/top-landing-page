@@ -2,7 +2,9 @@ html,body {
     margin: 0;
     padding: 0;
 }
-
+div{
+    display: block;
+}
 #hero {
     background-color: #1F2937;
 }
@@ -19,9 +21,10 @@ html,body {
     padding: 10px;
 }
 .nav-link{
+    text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
-    margin: 15px;
+    padding: 10px;
 }
 #random-info{
     padding: 25px;
@@ -35,15 +38,14 @@ html,body {
 }
 .info-header{
     font-size: 36px; 
-    font-weight: 800;
     text-align: center;
     color: #1F2937;
 }
 .main-pic{
     height: 300px;
-    width: 500px;
+    width: 600px;
     margin: 25px;
-    /*de lucrat cu flexbox: flex property-> min max base or whatever */
+    
 }
 .hero-main-text{
     text-align: left;
@@ -51,6 +53,7 @@ html,body {
     margin-left: 25px;
     font-size: 48px;
     color: #F9FAF8;
+    font-weight: 800;
 }
 .hero-secondary-text{
     margin-left: 25px;
@@ -93,7 +96,7 @@ html,body {
     padding: 80px;
 }
 .final{
-    font-size: 36px;
+    font-size: 33px;
     font-weight:light;
     font-style: italic;
     color: #1F2937;
@@ -104,8 +107,43 @@ html,body {
 }
 
 #action{
-    background-color: #3882F6;
+    margin: 50px 200px;
+    padding: 10px 80px;
     display: flex;
-    gap: 30px;
-    margin: 50px;
+    align-items: center;
+    border-radius: 5px;
+    border-color: none;
+    background-color: #3882F6;
+    color: white;
+}
+#action-text{
+    flex: 1; /*every div inside ends up the exact same size*/ 
+    text-align: left;
+    
+}
+.act1{
+    /* margin: top right bottom left */
+    padding: 0;
+    margin: 30px 0px 0px 50px;
+}
+.act2{
+    /* margin: top right bottom left
+    margin: top+bottom right+left */
+    margin: 5px 30px 30px 50px;
+    
+}
+.signup{
+    display: inline-block;
+    color: white;
+    border-color: #fff;
+    border-radius: 8px;
+    
+}
+
+#footer {
+    text-align: center;
+    background-color: #1F2937;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    padding: 15px;
 }
